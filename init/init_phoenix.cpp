@@ -99,5 +99,7 @@ void vendor_load_properties() {
         }
         property_override("ro.build.fingerprint", "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V11.0.10.0.QGHINXM:user/release-keys");
         property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V11.0.10.0.QGHINXM release-keys");
+        property_override("ro.com.google.clientidbase", "android-xiaomi");
+        property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
     }
 }
