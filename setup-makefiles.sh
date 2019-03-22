@@ -7,10 +7,11 @@
 
 set -e
 
+# Required!
 export DEVICE=phoenix
 export DEVICE_COMMON=sm6150-common
 export VENDOR=xiaomi
 
 export DEVICE_BRINGUP_YEAR=2020
 
-./../../$VENDOR/$DEVICE_COMMON/setup-makefiles.sh $@
+"./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
