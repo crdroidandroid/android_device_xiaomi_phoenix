@@ -68,6 +68,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/sn100x
 
 PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Inherit from sm6150-common
