@@ -36,6 +36,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.xiaomi
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
