@@ -12,8 +12,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_phoenix
 PRODUCT_DEVICE := phoenix
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi K30
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
