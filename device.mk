@@ -7,6 +7,10 @@
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_phoenix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_phoenix.rc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
