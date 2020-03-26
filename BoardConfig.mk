@@ -9,6 +9,9 @@
 
 DEVICE_PATH := device/xiaomi/phoenix
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
