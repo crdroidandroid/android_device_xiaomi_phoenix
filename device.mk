@@ -67,7 +67,8 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.rc
+    init.qcom.rc \
+    init.mi_thermald.rc
 
 # Lights
 PRODUCT_PACKAGES += \
