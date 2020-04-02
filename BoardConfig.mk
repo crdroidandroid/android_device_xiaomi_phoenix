@@ -4,13 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/xiaomi/phoenix
+
 # Display density
 TARGET_SCREEN_DENSITY := 440
 
 # Inherit from sm6150-common
 -include device/xiaomi/sm6150-common/BoardConfigCommon.mk
-
-DEVICE_PATH := device/xiaomi/phoenix
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
