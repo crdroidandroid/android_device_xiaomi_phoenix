@@ -13,7 +13,7 @@ DEVICE_PATH := device/xiaomi/phoenix
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_phoenix
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_phoenix
 TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 
 # Kernel
