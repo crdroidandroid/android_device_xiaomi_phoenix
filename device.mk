@@ -11,6 +11,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Cryptfshw
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0.vendor
+
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_phoenix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_phoenix.rc \
