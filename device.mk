@@ -20,6 +20,12 @@ PRODUCT_PACKAGES += \
     init.panel_info.sh \
     init.phoenix.rc
 
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service \
+    consumerir.default
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
