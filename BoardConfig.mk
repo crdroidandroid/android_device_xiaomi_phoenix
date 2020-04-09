@@ -81,9 +81,8 @@ BOARD_RAMDISK_OFFSET := 0x1000000
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
-TARGET_KERNEL_CONFIG := vendor/phoenix_defconfig
+TARGET_KERNEL_CONFIG := vendor/lineage_phoenix_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
