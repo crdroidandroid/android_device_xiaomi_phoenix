@@ -150,7 +150,7 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 lib64/libdiag_system.so
 
 # Power-off charging daemon
-bin/charger
+-bin/charger:bin/chargeonlymode
 
 # Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
