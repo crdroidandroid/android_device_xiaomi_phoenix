@@ -48,6 +48,8 @@ vendor/lib/libsurround_3mic_proc.so
 vendor/lib/libultrasound.so
 
 # Audio FX modules
+etc/permissions/audiosphere.xml
+framework/audiosphere.jar
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libdirac.so
 vendor/lib64/soundfx/libqcbassboost.so
@@ -71,7 +73,9 @@ vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
 # Camera
 lib64/libCameraEffectJNI.so:vendor/lib64/libCameraEffectJNI.so
+lib64/libarcsoft_deflicker.so:vendor/lib64/libarcsoft_deflicker.so
 lib64/libarcsoft_single_chart_calibration.so:vendor/lib64/libarcsoft_single_chart_calibration.so
+lib64/libarcsoft_wideselfie.so:vendor/lib64/libarcsoft_wideselfie.so
 lib64/libcamera_960_mpbase.so:vendor/lib64/libcamera_960_mpbase.so
 lib64/libcamera_arcsoft_beautyshot.so:vendor/lib64/libcamera_arcsoft_beautyshot.so
 lib64/libcamera_arcsoft_handgesture.so:vendor/lib64/libcamera_arcsoft_handgesture.so
@@ -280,12 +284,6 @@ vendor/lib64/libnpu.so
 vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libsdk_sr.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsns_registry_skel.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libst_sr_models.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libswvdec.so
@@ -294,12 +292,44 @@ vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libxmi_high_dynamic_range.so
+vendor/lib64/libxml2_vendor.so
 vendor/lib64/mibokeh_712_opencl.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
+
+# Camera HAX
+vendor/lib/camera.device@3.5-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/android.hardware.camera.provider@2.4-external.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib/camera.device@3.5-external-impl.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/camera.device@3.4-external-impl.so
+vendor/lib64/camera.device@3.5-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/android.hardware.camera.provider@2.4-external.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib64/camera.device@3.5-external-impl.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/camera.device@3.4-external-impl.so
+vendor/etc/permissions/android.hardware.camera.full.xml
+vendor/etc/permissions/android.hardware.camera.front.xml
+vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml
+vendor/etc/permissions/android.hardware.camera.raw.xml
+vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
+vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+vendor/bin/cameratest
 
 # Charger
 vendor/bin/charge_logger
@@ -313,13 +343,20 @@ vendor/etc/dsi_g7b_42_02_0b_video_display_mi.xml
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_phoenix
+vendor/etc/permissions/com.fingerprints.extension.xml
+vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/hw/fingerprint.fpc.so
 vendor/lib64/hw/fingerprint.goodix.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0_vendor.so
+vendor/lib/hw/fingerprint.fpc.so
+vendor/lib/hw/fingerprint.goodix.so
+vendor/lib/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
 vendor/firmware/NT36xxx_MP_Setting_Criteria_592A.csv
