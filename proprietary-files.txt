@@ -68,8 +68,10 @@ vendor/etc/permissions/vendor.qti.hardware.factory.xml:product/etc/permissions/v
 bin/displayfeature
 lib64/libdisplayfeature.so
 lib64/libdisplayfeatureservice.so
+lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 lib/libdisplayfeature.so
 lib/libdisplayfeatureservice.so
+lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # DPM
 framework/tcmclient.jar
