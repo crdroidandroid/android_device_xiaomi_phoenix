@@ -21,7 +21,41 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#define BTM_DEF_LOCAL_NAME   "Redmi K30"
+
+#pragma push_macro("PROPERTY_VALUE_MAX")
+
+#include <cutils/properties.h>
+#include <string.h>
+
+#include "osi/include/osi.h"
+
+typedef struct {
+    const char *product_device;
+    const char *product_model;
+} device_t;
+
+static const device_t devices[] = {
+    {"phoenix", "Redmi K30"},
+    {"phoenixin", "Poco X2"},
+};
+
+static inline const char *BtmGetDefaultName()
+{
+    char product_device[PROPERTY_VALUE_MAX];
+    property_get("ro.product.device", product_device, "");
+
+    for (unsigned int i = 0; i < ARRAY_SIZE(devices); i++) {
+        device_t device = devices[i];
+
+        if (strcmp(device.product_device, product_device) == 0) {
+            return device.product_model;
+        }
+    }
+
+    return "Redmi K30";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 // Disables read remote device feature
 #define BTM_WBS_INCLUDED TRUE
 #define BTIF_HF_WBS_PREFERRED TRUE
@@ -29,4 +63,7 @@
 #define BLE_VND_INCLUDED   TRUE
 // skips conn update at conn completion
 #define BT_CLEAN_TURN_ON_DISABLED 1
+
+#pragma pop_macro("PROPERTY_VALUE_MAX")
+
 #endif
