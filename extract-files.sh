@@ -78,4 +78,15 @@ function fix_xml_version () {
 fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
 fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
 
+#
+# Remove android.hidl.base@1.0.so requirement
+#
+function fix_hidl_base () {
+    sed -i \
+        's/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/' \
+        "$DEVICE_BLOB_ROOT"/"$1"
+}
+
+fix_hidl_base lib64/libwfdnative.so
+
 "${MY_DIR}/setup-makefiles.sh"
