@@ -29,20 +29,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        try {
-            // We need to reset this setting to trigger an update in display service
-            final float refreshRate = Settings.System.getFloat(context.getContentResolver(),
-                Settings.System.MIN_REFRESH_RATE, 120.0f);
-            Thread.sleep(500);
-            Settings.System.putFloat(context.getContentResolver(),
-                Settings.System.MIN_REFRESH_RATE, 120.0f);
-            Thread.sleep(500);
-            Settings.System.putFloat(context.getContentResolver(),
-                Settings.System.MIN_REFRESH_RATE, refreshRate);
-        } catch (Exception e) {
-            // Ignore
-        }
-
         DiracUtils.initialize(context);
     }
 }
