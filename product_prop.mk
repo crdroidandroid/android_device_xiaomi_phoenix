@@ -47,6 +47,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.display.idle_time=1100 \
     sys.displayfeature_hidl=true \
     vendor.hbm.enable=true \
+    debug.sf.latch_unsignaled=1 \
     ro.sf.lcd_density=440
 
 # DPM
@@ -136,6 +137,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=0
+
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.use_fifo_ui=1
 
 # Wireless display
 PRODUCT_PRODUCT_PROPERTIES += \
