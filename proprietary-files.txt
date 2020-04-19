@@ -173,6 +173,10 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 -product/priv-app/ims/ims.apk|82c21146e0a5156493e2c7ef20275d8d98647b35
 lib64/libdiag_system.so
 
+# Postprocessing
+etc/permissions/com.qti.snapdragon.sdk.display.xml
+framework/com.qti.snapdragon.sdk.display.jar
+
 # Power-off charging daemon
 -bin/charger:bin/chargeonlymode
 
