@@ -72,6 +72,9 @@ product/framework/vendor.qti.hardware.factory-V1.1-java.jar
 -product/lib64/com.quicinc.cne.constants@2.1.so
 vendor/etc/permissions/vendor.qti.hardware.factory.xml:product/etc/permissions/vendor.qti.hardware.factory.xml
 
+# DeviceInfo
+-product/app/DeviceInfo/DeviceInfo.apk
+
 # Display feature
 bin/displayfeature
 lib64/libdisplayfeature.so
