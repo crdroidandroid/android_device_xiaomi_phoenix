@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Display density
 TARGET_SCREEN_DENSITY := 440
 
@@ -20,6 +22,7 @@ TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
 # Audio
 AUDIO_FEATURE_ENABLED_TFA98XX_FEEDBACK := true
+TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_phoenix
