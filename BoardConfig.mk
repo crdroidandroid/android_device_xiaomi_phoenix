@@ -15,6 +15,7 @@ TARGET_SCREEN_DENSITY := 440
 DEVICE_PATH := device/xiaomi/phoenix
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Assert
