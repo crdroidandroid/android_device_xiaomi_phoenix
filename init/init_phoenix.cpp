@@ -88,6 +88,7 @@ void vendor_load_properties() {
         }
         property_override("ro.build.fingerprint", "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V12.0.3.0.QGHCNXM:user/release-keys");
         property_override("ro.build.description", "phoenix-user 10 QKQ1.190825.002 V12.0.3.0.QGHCNXM release-keys");
+        property_override("ro.boot.product.hardware.sku", "phoenix");
     } else if (region == "INDIA") {
         for (const auto &source : ro_props_default_source_order) {
             set_ro_build_prop(source, "fingerprint",
