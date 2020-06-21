@@ -15,6 +15,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
+# Audio
+AUDIO_FEATURE_ENABLED_TFA98XX_FEEDBACK := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_phoenix
 TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
