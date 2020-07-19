@@ -42,64 +42,101 @@
 using android::base::GetProperty;
 using android::init::property_set;
 
-std::vector<std::string> ro_props_default_source_order = {
-    "",
-    "odm.",
-    "product.",
-    "system.",
-    "vendor.",
+constexpr const char *RO_PROP_SOURCES[] = {
+    nullptr,   "product.", "product_services.", "odm.",
+    "vendor.", "system.",  "bootimage.",
+};
+
+constexpr const char *BRANDS[] = {
+    "Redmi",
+    "POCO",
+};
+
+constexpr const char *PRODUCTS[] = {
+    "phoenix",
+    "phoenixin",
+};
+
+constexpr const char *DEVICES[] = {
+    "Redmi K30",
+    "POCO X2",
+};
+
+constexpr const char *BUILD_DESCRIPTION[] = {
+    "phoenix-user 10 QKQ1.190825.002 V12.0.3.0.QGHCNXM release-keys",
+    "phoenixin-user 10 QKQ1.190825.002 V11.0.11.0.QGHINXM release-keys",
+};
+
+constexpr const char *BUILD_FINGERPRINT[] = {
+    "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V12.0.3.0.QGHCNXM:user/"
+    "release-keys",
+    "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V11.0.11.0.QGHINXM:user/"
+    "release-keys",
+};
+
+constexpr const char *CLIENT_ID[] = {
+    "android-xiaomi",
+    "android-xiaomi-rev1",
 };
 
 void property_override(char const prop[], char const value[], bool add = true) {
-    prop_info *pi;
+  prop_info *pi;
 
-    pi = (prop_info *)__system_property_find(prop);
-    if (pi)
-        __system_property_update(pi, value, strlen(value));
-    else if (add)
-        __system_property_add(prop, strlen(prop), value, strlen(value));
+  pi = (prop_info *)__system_property_find(prop);
+  if (pi)
+    __system_property_update(pi, value, strlen(value));
+  else if (add)
+    __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+void load_props(const char *model, bool is_in = false) {
+  const auto ro_prop_override = [](const char *source, const char *prop,
+                                   const char *value, bool product) {
+    std::string prop_name = "ro.";
+
+    if (product)
+      prop_name += "product.";
+    if (source != nullptr)
+      prop_name += source;
+    if (!product)
+      prop_name += "build.";
+    prop_name += prop;
+
+    property_override(prop_name.c_str(), value);
+  };
+
+  for (const auto &source : RO_PROP_SOURCES) {
+    ro_prop_override(source, "device", is_in ? PRODUCTS[1] : PRODUCTS[0], true);
+    ro_prop_override(source, "model", model, true);
+    if (!is_in) {
+      ro_prop_override(source, "brand", BRANDS[0], true);
+      ro_prop_override(source, "name", PRODUCTS[0], true);
+      ro_prop_override(source, "fingerprint", BUILD_FINGERPRINT[0], false);
+    } else {
+      ro_prop_override(source, "brand", BRANDS[1], true);
+      ro_prop_override(source, "name", PRODUCTS[1], true);
+      ro_prop_override(source, "fingerprint", BUILD_FINGERPRINT[1], false);
+    }
+  }
+
+  if (!is_in) {
+    ro_prop_override(nullptr, "description", BUILD_DESCRIPTION[0], false);
+    property_override("ro.boot.product.hardware.sku", PRODUCTS[0]);
+  } else {
+    ro_prop_override(nullptr, "description", BUILD_DESCRIPTION[1], false);
+    property_override("ro.com.google.clientidbase", CLIENT_ID[0]);
+    property_override("ro.com.google.clientidbase.ms", CLIENT_ID[1]);
+  }
+  ro_prop_override(nullptr, "product", model, false);
 }
 
 void vendor_load_properties() {
-    const auto set_ro_build_prop = [](const std::string &source,
-                                      const std::string &prop,
-                                      const std::string &value) {
-        auto prop_name = "ro." + source + "build." + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
-    };
+  std::string region;
+  region = GetProperty("ro.boot.hwc", "");
 
-    const auto set_ro_product_prop = [](const std::string &source,
-                                        const std::string &prop,
-                                        const std::string &value) {
-        auto prop_name = "ro.product." + source + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
-    };
-
-    std::string region;
-    region = GetProperty("ro.boot.hwc", "");
-
-    if (region == "CN") {
-        for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint",
-                              "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V12.0.3.0.QGHCNXM:user/release-keys");
-            set_ro_product_prop(source, "brand", "Redmi");
-            set_ro_product_prop(source, "device", "phoenix");
-            set_ro_product_prop(source, "model", "Redmi K30");
-        }
-        property_override("ro.build.fingerprint", "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V12.0.3.0.QGHCNXM:user/release-keys");
-        property_override("ro.build.description", "phoenix-user 10 QKQ1.190825.002 V12.0.3.0.QGHCNXM release-keys");
-        property_override("ro.boot.product.hardware.sku", "phoenix");
-    } else if (region == "INDIA") {
-        for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint",
-                              "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V11.0.10.0.QGHINXM:user/release-keys");
-            set_ro_product_prop(source, "brand", "POCO");
-            set_ro_product_prop(source, "device", "phoenixin");
-            set_ro_product_prop(source, "model", "POCO X2");
-        }
-        property_override("ro.build.fingerprint", "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V11.0.10.0.QGHINXM:user/release-keys");
-        property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V11.0.10.0.QGHINXM release-keys");
-        property_override("ro.com.google.clientidbase", "android-xiaomi");
-        property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
-    }
+  if (region == "CN") {
+    load_props(DEVICES[0], false);
+  } else if (region == "INDIA") {
+    load_props(DEVICES[1], true);
+  }
 }
