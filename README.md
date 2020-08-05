@@ -11,7 +11,7 @@ It was announced and released in December 2019.
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-SoC     | Qualcomm SDM730 Snapdragon 730G
+SoC     | Qualcomm SM6150 Snapdragon 730G
 CPU     | Octa-core (2x2.2 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)
 GPU     | Adreno 618
 Memory  | 6/8 GB RAM
