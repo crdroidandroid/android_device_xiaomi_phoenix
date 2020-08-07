@@ -461,4 +461,8 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>13</item>
     </integer-array>
+
+    <!-- Whether device supports sensor based doze customizations -->
+    <bool name="config_dozePulsePickup">true</bool>
+    <bool name="config_dozePulseTilt">true</bool>
 </resources>
