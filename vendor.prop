@@ -1,3 +1,7 @@
+# Audio
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
+
 # ACDB
 persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
 persist.vendor.audio.calfile1=/vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
