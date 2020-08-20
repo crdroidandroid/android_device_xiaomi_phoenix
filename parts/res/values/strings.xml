@@ -67,4 +67,7 @@
     <string name="thermal_dialer">Dialer</string>
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_youtube">Youtube</string>
+
+    <!-- Refresh Rate -->
+    <string name="frame_rate_label">Refresh rate</string>
 </resources>

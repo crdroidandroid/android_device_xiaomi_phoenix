@@ -60,5 +60,35 @@
             android:permission="ThermalService">
         </service>
 
+        <!-- FPS -->
+        <service
+            android:name=".fps.FrameRateTile"
+            android:icon="@drawable/ic_frame_rate_mode_120"
+            android:label="@string/frame_rate_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".fps.FrameRateActivity"
+            android:label="@string/frame_rate_label"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
+        </activity>
+
+        <service
+            android:name=".fps.FrameRateService"
+            android:permission="FrameRateService">
+        </service>
     </application>
 </manifest>
