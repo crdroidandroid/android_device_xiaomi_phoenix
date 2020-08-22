@@ -79,6 +79,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.ramdisk
+
 # Secure element
 PRODUCT_PACKAGES += \
     SecureElement
