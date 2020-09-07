@@ -50,7 +50,7 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
-vendor/etc/camera/megviifacepp_0_5_2_model
+vendor/etc/camera/megviifacepp_0_5_2_model|1f0cdc706d3853114ecf7a2c0c7436238fcdf258
 vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/MIUI_Time.ttf
 vendor/etc/camera/morpho_lowlight4.0_3hdr_algoup.xml
@@ -201,7 +201,7 @@ vendor/lib64/libft2vendor.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libhvx_interface.so
 vendor/lib64/libmegface.so
-vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libMegviiFacepp-0.5.2.so|b8521eb08b2d8e157b86f9973ddd5810e7b6de5b
 vendor/lib64/libmialgo_fs.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
