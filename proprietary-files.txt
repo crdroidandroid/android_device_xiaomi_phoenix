@@ -98,6 +98,7 @@ vendor/etc/camera/score_icon.png
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/watermark_font_2300_3199.dat
+vendor/etc/screen_light.xml
 vendor/lib64/camera/com.qti.sensor.phoenix_gc02m1_depth.so
 vendor/lib64/camera/com.qti.sensor.phoenix_gc02m1_front.so
 vendor/lib64/camera/com.qti.sensor.phoenix_gc02m1_macro.so
@@ -121,7 +122,9 @@ vendor/lib64/camera/com.qti.sensormodule.phoenix_sunny_ov8856.bin
 vendor/lib64/camera/com.qti.sensormodule.phoenix_sunny_s5k3t2.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_depth.bin
+vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_depth_mono.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_front.bin
+vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_front_mono.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_gc02m1_macro.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_imx686.bin
 vendor/lib64/camera/com.qti.tuned.phoenix_ofilm_ov8856.bin
@@ -162,6 +165,7 @@ vendor/lib64/camera/components/com.qti.node.gpu.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
 vendor/lib64/camera/components/com.qti.node.mimovie.so
 vendor/lib64/camera/components/com.qti.node.photosolid.so
+vendor/lib64/camera/components/com.qti.node.remosaic.so
 vendor/lib64/camera/components/com.qti.node.stich.so
 vendor/lib64/camera/components/com.qti.node.swregistration.so
 vendor/lib64/camera/components/com.qti.node.watermark.so
@@ -237,6 +241,7 @@ vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libhvx_interface.so
 vendor/lib64/libmegface.so
 vendor/lib64/libMegviiFacepp-0.5.2.so|b8521eb08b2d8e157b86f9973ddd5810e7b6de5b
+vendor/lib64/libmialgo_basic.so
 vendor/lib64/libmialgo_fs.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
@@ -248,10 +253,13 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libnpu.so
+vendor/lib64/libremosaic_daemon.so
+vendor/lib64/libremosaiclib.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libst_sr_models.so
@@ -268,6 +276,7 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libxml2_vendor.so
+vendor/lib64/mibokeh_712_opencl.bin
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
