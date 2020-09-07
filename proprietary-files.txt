@@ -349,6 +349,7 @@ vendor/etc/sensors/config/tsl2560.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/lib64/libssc.so
+vendor/lib64/libssccalapi.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libultrasound.so
 vendor/lib64/sensors.elliptic.so
