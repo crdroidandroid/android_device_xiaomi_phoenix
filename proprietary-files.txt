@@ -296,13 +296,6 @@ vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
 
-# GPU Firmware
-vendor/firmware/a615_zap.mdt
-
-# IPA Firmware
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.mdt
-
 # NFC
 vendor/lib/libsn100u_fw.so
 
