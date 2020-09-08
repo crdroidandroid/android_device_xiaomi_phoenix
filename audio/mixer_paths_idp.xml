@@ -343,9 +343,9 @@
     <ctl name="TX_DEC6 Volume" value="84" />
     <ctl name="TX_DEC7 Volume" value="84" />
 
-    <ctl name="ADC1 Volume" value="6" />
-    <ctl name="ADC2 Volume" value="6" />
-    <ctl name="ADC3 Volume" value="6" />
+    <ctl name="ADC1 Volume" value="12" />
+    <ctl name="ADC2 Volume" value="12" />
+    <ctl name="ADC3 Volume" value="12" />
 
     <!-- Compander controls don't exist-->
 
@@ -440,7 +440,7 @@
 
     <path name="ultrasound-cover1">
         <ctl name="Ultrasound Enable" value="On"/>
-        <ctl name="Ultrasound Mode" value="584"/>
+        <ctl name="Ultrasound Mode" value="764"/>
         <ctl name="Ultrasound Debug Mode" value="1" />
         <ctl name="Ultrasound Log Level" value="7" />
         <ctl name="Ultrasound Custom Setting 1" value="3" />
@@ -2511,6 +2511,7 @@
     </path>
 
     <path name="mmap-playback bt-sco-wb">
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="mmap-playback bt-sco" />
     </path>
 
