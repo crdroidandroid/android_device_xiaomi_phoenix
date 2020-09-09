@@ -63,14 +63,14 @@ constexpr const char *DEVICES[] = {
 };
 
 constexpr const char *BUILD_DESCRIPTION[] = {
-    "phoenix-user 10 QKQ1.190825.002 V12.0.3.0.QGHCNXM release-keys",
-    "phoenixin-user 10 QKQ1.190825.002 V11.0.11.0.QGHINXM release-keys",
+    "phoenix-user 10 QKQ1.190825.002 V12.0.4.0.QGHCNXM release-keys",
+    "phoenixin-user 10 QKQ1.190825.002 V12.0.1.0.QGHINXM release-keys",
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V12.0.3.0.QGHCNXM:user/"
+    "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V12.0.4.0.QGHCNXM:user/"
     "release-keys",
-    "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V11.0.11.0.QGHINXM:user/"
+    "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V12.0.1.0.QGHINXM:user/"
     "release-keys",
 };
 
