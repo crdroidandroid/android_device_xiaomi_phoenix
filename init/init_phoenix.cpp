@@ -68,9 +68,9 @@ constexpr const char *BUILD_DESCRIPTION[] = {
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V12.0.4.0.QGHCNXM:user/"
+    "google/coral/coral:11/RP1A.200720.009/6720564:user/"
     "release-keys",
-    "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V12.0.1.0.QGHINXM:user/"
+    "google/coral/coral:11/RP1A.200720.009/6720564:user/"
     "release-keys",
 };
 
