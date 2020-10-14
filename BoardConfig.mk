@@ -24,6 +24,9 @@ TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+# Camera
+TARGET_CAMERA_BOOTTIME_TIMESTAMP := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_phoenix
 TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
