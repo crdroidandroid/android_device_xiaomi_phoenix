@@ -738,28 +738,28 @@
     </path>
 
     <path name="amic1">
-	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX0" value="ADC0" />
-	<ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-	<ctl name="ADC1_MIXER Switch" value="1" />
+    	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
+	    <ctl name="TX SMIC MUX0" value="ADC0" />
+	    <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+	    <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+	    <ctl name="ADC1_MIXER Switch" value="1" />
     </path>
 
     <path name="amic3">
-	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX0" value="ADC2" />
-	<ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-	<ctl name="ADC2_MIXER Switch" value="1" />
-	<ctl name="ADC2 MUX" value="INP3" />
+	    <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+	    <ctl name="TX SMIC MUX0" value="ADC2" />
+	    <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+	    <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+	    <ctl name="ADC2_MIXER Switch" value="1" />
+	    <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="amic4">
-	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
-	<ctl name="TX SMIC MUX0" value="ADC3" />
-	<ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-	<ctl name="ADC3_MIXER Switch" value="1" />
+	    <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+	    <ctl name="TX SMIC MUX0" value="ADC3" />
+	    <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+	    <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+	    <ctl name="ADC3_MIXER Switch" value="1" />
     </path>
 
     <path name="main-mic">
@@ -957,6 +957,11 @@
     <path name="deep-buffer-playback speaker-and-headphones">
         <path name="deep-buffer-playback headphones" />
         <path name="deep-buffer-playback" />
+    </path>
+
+    <path name="speaker-and-headphones-hifi-filter">
+        <path name="headphones" />
+        <path name="speaker" />
     </path>
 
     <path name="deep-buffer-playback speaker-safe-and-headphones">
@@ -3124,6 +3129,10 @@
    <path name="hph-hifi-mode">
         <ctl name="RX_HPH_PWR_MODE" value="LOHIFI" />
         <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
+    </path>
+
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
     </path>
 
     <path name="hph-highquality-mode">
