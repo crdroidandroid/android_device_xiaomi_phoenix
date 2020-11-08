@@ -22,6 +22,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
 # Audio
+TARGET_EXCLUDES_AUDIOFX := true
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # Init
