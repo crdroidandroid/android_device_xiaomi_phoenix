@@ -473,12 +473,6 @@
         <ctl name="RX_COMP2 Switch" value="0" />
         <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
 
-        <ctl name="Ultrasound Enable" value="On" />
-        <ctl name="RX_CDC_DMA_RX_1 SampleRate" value="KHZ_96" />
-        <ctl name="RX_CDC_DMA_RX_1 Channels" value="One" />
-        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
-        <ctl name="RX INT0_2 MUX" value="RX2" />
-
         <ctl name="EAR_RDAC Switch" value="1" />
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="EAR PA GAIN" value="G_6_DB" />

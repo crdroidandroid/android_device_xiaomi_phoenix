@@ -555,14 +555,33 @@
     <path name="ultrasound-proximity">
         <ctl name="Ultrasound Enable" value="On" />
         <ctl name="Ultrasound Mode" value="760" />
+        <ctl name="Ultrasound Debug Mode" value="1" />
         <ctl name="Ultrasound Log Level" value="7" />
         <ctl name="Ultrasound Custom Setting 1" value="1" />
     </path>
 
     <path name="ultrasound-proximity-output">
+        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
+        <ctl name="RX INT0_2 MUX" value="RX2" />
     </path>
 
     <path name="ultrasound-proximity-output handset">
+        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
+        <ctl name="RX INT0_2 MUX" value="RX2" />
+    </path>
+
+    <path name="ultrasound-proximity-output headphones">
+        <ctl name="RX_MACRO RX5 MUX" value="AIF2_PB" />
+    </path>
+
+    <path name="ultrasound-proximity-output headset">
+        <ctl name="RX_MACRO RX5 MUX" value="AIF2_PB" />
+    </path>
+
+    <path name="ultrasound-proximity-output speaker">
+    </path>
+
+    <path name="ultrasound-proximity-output speaker-and-headphones">
     </path>
 
     <path name="ultrasound-proximity-input">
@@ -577,12 +596,23 @@
     </path>
 
     <path name="ultrasound-cover1-output">
+        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
+        <ctl name="RX INT0_2 MUX" value="RX2" />
     </path>
 
     <path name="ultrasound-cover1-output handset">
+        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
+        <ctl name="RX INT0_2 MUX" value="RX2" />
+    </path>
+
+    <path name="ultrasound-cover1-output headphones">
+    </path>
+
+    <path name="ultrasound-cover1-output headset">
     </path>
 
     <path name="ultrasound-cover1-input">
+        <!--  mixer controls for TX use-case  -->
     </path>
 
     <path name="ultrasound-rampdown">
@@ -608,103 +638,11 @@
     <path name="ultrasound-input">
         <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
         <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
-        <ctl name="TX_AIF2_CAP Mixer DEC1" value="1" />
-        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX1" value="ADC3" />
+        <ctl name="TX_AIF2_CAP Mixer DEC4" value="1" />
+        <ctl name="TX DEC4 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX4" value="ADC3" />
         <ctl name="ADC3_MIXER Switch" value="1" />
         <ctl name="ADC3 Volume" value="8" />
-    </path>
-
-    <!-- for mius start -->
-    <path name="mi_ultrasound-proximity">
-        <ctl name="MI_Ultrasound Enable" value="On" />
-        <ctl name="MI_Ultrasound Mode" value="618" />
-    </path>
-
-    <path name="mi_ultrasound-output">
-        <ctl name="Ultrasound Enable" value="On" />
-        <ctl name="RX_CDC_DMA_RX_1 SampleRate" value="KHZ_96" />
-        <ctl name="RX_CDC_DMA_RX_1 Channels" value="One" />
-        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
-        <ctl name="RX INT0_2 MUX" value="RX2" />
-        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="EAR_RDAC Switch" value="1" />
-        <ctl name="EAR PA GAIN" value="G_6_DB" />
-        <ctl name="RX_EAR Mode" value="ON" />
-    </path>
-
-    <path name="mi_ultrasound-input">
-        <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
-        <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
-        <ctl name="TX_AIF2_CAP Mixer DEC1" value="1" />
-        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX1" value="ADC3" />
-        <ctl name="ADC3_MIXER Switch" value="1" />
-        <ctl name="ADC3 Volume" value="8" />
-    </path>
-
-    <path name="mi_ultrasound-proximity-input">
-    </path>
-
-    <path name="mi_ultrasound-proximity-output">
-	<ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="mi_ultrasound-proximity-output handset">
-	<ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="mi_ultrasound-gesture1">
-        <ctl name="Mi_Ultrasound Enable" value="On"/>
-        <!--  release mode  -->
-        <!--ctl name="Mi_Ultrasound Mode" value="584"/-->
-        <!--  debug mode  -->
-        <ctl name="Mi_Ultrasound Mode" value="585"/>
-        <ctl name="Mi_Ultrasound Log Level" value="7" />
-    </path>
-
-    <path name="mi_ultrasound-gesture1-output">
-        <!--  mixer controls for RX use-case  -->
-    </path>
-
-    <path name="mi_ultrasound-gesture1-input">
-        <!--  mixer controls for TX use-case  -->
-    </path>
-
-    <path name="mi_ultrasound-rampdown">
-        <ctl name="Mi_Ultrasound RampDown" value="On"/>
-    </path>
-
-    <path name="mi_ultrasound-screen-on">
-        <ctl name="Mi_Ultrasound Event" value="1"/>
-    </path>
-
-    <path name="mi_ultrasound-on">
-        <ctl name="Mi_Ultrasound Tx Port" value="On"/>
-    </path>
-
-    <path name="mi_ultrasound-output-stereo">
-        <!--  mixer controls for receiver/speaker stereo mode  -->
-    </path>
-
-    <path name="mi_ultrasound-input-secondary">
-        <!--  mixer controls for dedicated microphone  -->
-    </path>
-
-    <path name="mi_ultrasound-suspend">
-        <ctl name="Mi_Ultrasound Suspend" value="1"/>
-    </path>
-    <!-- for mius end -->
-
-    <path name="ultrasound-output-stereo">
-    </path>
-
-    <path name="ultrasound-rampdown">
-        <ctl name="Ultrasound RampDown" value="On" />
-    </path>
-
-    <path name="ultrasound-screen-on">
-         <ctl name="Ultrasound Event" value="1" />
     </path>
 
     <path name="ultrasound-on">
@@ -719,14 +657,14 @@
         <ctl name="TX_CDC_DMA_TX_4 Channels" value="Two" />
         <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
 
-        <ctl name="TX_AIF2_CAP Mixer DEC1" value="1" />
-        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX1" value="ADC3" />
+        <ctl name="TX_AIF2_CAP Mixer DEC3" value="1" />
+        <ctl name="TX DEC3 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX3" value="ADC3" />
         <ctl name="ADC3_MIXER Switch" value="1" />
 
-        <ctl name="TX_AIF2_CAP Mixer DEC0" value="1"/>
-        <ctl name="TX DEC0 MUX" value="SWR_MIC"/>
-        <ctl name="TX SMIC MUX0" value="ADC0"/>
+        <ctl name="TX_AIF2_CAP Mixer DEC2" value="1"/>
+        <ctl name="TX DEC2 MUX" value="SWR_MIC"/>
+        <ctl name="TX SMIC MUX2" value="ADC0"/>
         <ctl name="ADC1_MIXER Switch" value="1" />
 
         <ctl name="ADC1 Volume" value="8" />
@@ -986,11 +924,6 @@
     <path name="deep-buffer-playback speaker-and-headphones">
         <path name="deep-buffer-playback headphones" />
         <path name="deep-buffer-playback" />
-    </path>
-
-    <path name="speaker-and-headphones-hifi-filter">
-        <path name="headphones" />
-        <path name="speaker" />
     </path>
 
     <path name="deep-buffer-playback speaker-safe-and-headphones">
@@ -3218,13 +3151,13 @@
         <path name="headphones" />
     </path>
 
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
+    </path>
+
    <path name="hph-hifi-mode">
         <ctl name="RX_HPH_PWR_MODE" value="LOHIFI" />
         <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
-    </path>
-
-    <path name="headphones-hifi-filter">
-        <path name="headphones" />
     </path>
 
     <path name="hph-highquality-mode">
@@ -3301,6 +3234,11 @@
     </path>
 
     <path name="speaker-and-headphones">
+        <path name="headphones" />
+        <path name="speaker" />
+    </path>
+
+    <path name="speaker-and-headphones-hifi-filter">
         <path name="headphones" />
         <path name="speaker" />
     </path>
