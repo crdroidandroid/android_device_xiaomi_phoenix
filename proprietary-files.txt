@@ -281,18 +281,6 @@ vendor/lib64/mibokeh_712_opencl.bin
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
-# Camera Service
-/bin/cameraserver
-/lib64/libcameraservice.so
-/lib/libcameraservice.so
-vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
 
