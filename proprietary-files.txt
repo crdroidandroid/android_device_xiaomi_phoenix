@@ -281,6 +281,26 @@ vendor/lib64/mibokeh_712_opencl.bin
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera Service
+bin/cameraserver|f8986411f608d96736807fa09fbd3d6b5feec986
+lib/libcameraservice.so|5a4ef0d289678265d0f6eee567949eb60e6d3d92
+system_ext/lib/vendor.qti.hardware.camera.device@1.0.so|53861a4c88d7310a0b15367e8a8677cbf8463a85
+system_ext/lib/vendor.qti.hardware.camera.device@2.0.so|d1a76f51caad5b13d0b8fc9c323b0b55b7bbe48f
+system_ext/lib/vendor.qti.hardware.camera.device@3.5.so|38d1fc7c8d364ccca7d8007a4a163c558660dd28
+vendor/bin/hw/android.hardware.camera.provider@2.4-service_64|94094985cdc15eb381c30ff36ab540b457eaac25
+vendor/lib64/android.hardware.camera.provider@2.4-external.so|72adbe24694e85af2a0b93fdc099c166dc476e20
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|3627dd07a9a762c165171a5b9aa67f331d89adf1
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|ef02d77e6a2c14fefbdf4093092a07061dc9ce9b
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so|543310393fa5170c481cd94f55ac65c6558d9202
+vendor/lib64/vendor.qti.hardware.camera.device@2.0.so|c22277198a5fdd7e4b7b057ef5068f7edbd3f817
+vendor/lib64/vendor.qti.hardware.camera.device@3.5.so|a054618c3750e90f8ac4a2d5d4069113ffcf7b53
+vendor/lib/android.hardware.camera.provider@2.4-external.so|7bc2fc8176cde2d5c59f607da23248400d61cf3f
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so|66e36a123af0bcaa693aeb0dc8a1edf385d6560b
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so|ab1e2b5d360836833de357fddf71cb5280edcfbd
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so|2e21d4dc8f06b6a78f9222ed00a7fa19eadaa91c
+vendor/lib/vendor.qti.hardware.camera.device@2.0.so|1f8f634218ea37ca13ef123cb696504be83eaca8
+vendor/lib/vendor.qti.hardware.camera.device@3.5.so|257e8369a938f229ce755f6de69a1f391bf6f550
+
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
 
