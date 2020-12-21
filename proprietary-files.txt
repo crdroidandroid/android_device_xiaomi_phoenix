@@ -21,39 +21,39 @@ vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
 # Audio
-vendor/lib64/hw/audio.primary.sm6150.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioroute_ext.so
-vendor/lib/hw/audio.primary.sm6150.so
-vendor/lib/libadm.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioroute_ext.so
+vendor/lib64/hw/audio.primary.sm6150.so|5375409113cc21124c931ed98b51df5991abeeec
+vendor/lib64/libaudioalsa.so|d9316323d6d93b46c1f429cc0d4ef2271e04fd55
+vendor/lib64/libaudioconfigstore.so|3a34f90b540655ad3dc212f5228fd1d0db248a34
+vendor/lib64/libaudio_log_utils.so|6091c30d5724adb31a3b4c71379cc004c235905a
+vendor/lib64/libaudioroute_ext.so|b4e005dc1dcc70bfd2ee4b49c2cfeeaf24d831f6
+vendor/lib/hw/audio.primary.sm6150.so|8b911ee54f1f7637a82fa0e9e6b6382558b2e96e
+vendor/lib/libadm.so|c5d8693dbec640d3366ad7620833b2e4387f3c01
+vendor/lib/libaudioalsa.so|448ebf789e999363f848f8a42c5f87673145d635
+vendor/lib/libaudioconfigstore.so|a00b695d8ec2666bdce729e0f947149c3b78b2b5
+vendor/lib/libaudio_log_utils.so|71ec4d31ad6c9e9a4bee8db7b5ab55b70ef7c4c3
+vendor/lib/libaudioroute_ext.so|4755d3e822d178efafc47380221a4a8eb6c07d39
 
 # Audio extensions
-vendor/lib64/liba2dpoffload.so
-vendor/lib64/libbatterylistener.so
-vendor/lib64/libcirrusspkrprot.so
-vendor/lib64/libcomprcapture.so
-vendor/lib64/libexthwplugin.so
-vendor/lib64/libhdmiedid.so
-vendor/lib64/libhdmipassthru.so
-vendor/lib64/libhfp.so
-vendor/lib64/libsndmonitor.so
-vendor/lib64/libspkrprot.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libbatterylistener.so
-vendor/lib/libcirrusspkrprot.so
-vendor/lib/libcomprcapture.so
-vendor/lib/libexthwplugin.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libhfp.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
+vendor/lib64/liba2dpoffload.so|d5ef6a3f9902bcaabdd3f7538a996b9513ed5754
+vendor/lib64/libbatterylistener.so|88843f2c4ea4f4cc756e952c18dd06684bf7ea2e
+vendor/lib64/libcirrusspkrprot.so|e78a05e1c32f5917f80ad39da69d354625c69d57
+vendor/lib64/libcomprcapture.so|068f1d883af8d9478d685b76781b607f449080ab
+vendor/lib64/libexthwplugin.so|8e1b0568eccccb3127e3e2b37b4134dce85afb0e
+vendor/lib64/libhdmiedid.so|6a8c54b38e1913f0d1eba4e7a5a9112457479cd0
+vendor/lib64/libhdmipassthru.so|3a423d51e28ce0fb2db0bd0fe819f6df408171f4
+vendor/lib64/libhfp.so|98e7a3fbb9b004f0d7c9a3bd5fe4c92d89a3a08e
+vendor/lib64/libsndmonitor.so|fbcab01e9da7f4bc490b0c55b8439778a1ca5cec
+vendor/lib64/libspkrprot.so|fff7a33b2e5df222c9db02d817eaaaeb92f48a0a
+vendor/lib/liba2dpoffload.so|810b9f50bd56be6e434e7f22cba09dba33b2ec64
+vendor/lib/libbatterylistener.so|be04d38a24e9cf1ddbec4b85c8684d1cd7b9a347
+vendor/lib/libcirrusspkrprot.so|a00cd5f1c52d18e88ba853f0978457e0d2eccc06
+vendor/lib/libcomprcapture.so|e72ea8e486b9044baf54afd3e0cc1c665e65851d
+vendor/lib/libexthwplugin.so|62ddd84fd443ac267210026f158ef39fca3ed8c9
+vendor/lib/libhdmiedid.so|531641041e3adebe50aa101c9d0d0e4e3d174536
+vendor/lib/libhdmipassthru.so|505f481523b469edc9296476e5ba84fd98862880
+vendor/lib/libhfp.so|4d9acc22c5219ff760b824adeee1f7cc06c5454e
+vendor/lib/libsndmonitor.so|4b66a362e24c16cb423819df0dcdfc6f1112df32
+vendor/lib/libspkrprot.so|5c6ddbeb53d14e9390bd76953fefdb8298497839
 
 # Audio (speaker amplifier) firmware
 vendor/firmware/tfa98xx.cnt
