@@ -139,6 +139,7 @@
     </module_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_COVER_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_1"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_HIFI" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_HIFI_FILTER" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_44_1_HIFI" backend="headphones-44.1" interface="RX_CDC_DMA_RX_0"/>

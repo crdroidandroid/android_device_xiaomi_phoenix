@@ -200,6 +200,9 @@
     <ctl name="VoiceMMode1_Tx Mixer USB_AUDIO_TX_MMode1" value="0" />
     <!-- Multimode Voice1 Display-Port -->
     <ctl name="DISPLAY_PORT_RX_Voice Mixer VoiceMMode1" value="0" />
+    <!-- Multimode Voice1 proxy-Port -->
+    <ctl name="PROXY_RX_Voice Mixer VoiceMMode1" value="0" />
+    <ctl name="VoiceMMode1_Tx Mixer PROXY_TX_MMode1" value="0" />
     <!-- Miltimode Voice1 end-->
 
     <!-- Multimode Voice2 -->
@@ -216,6 +219,9 @@
     <ctl name="VoiceMMode2_Tx Mixer USB_AUDIO_TX_MMode2" value="0" />
     <!-- Multimode Voice2 Display-Port -->
     <ctl name="DISPLAY_PORT_RX_Voice Mixer VoiceMMode2" value="0" />
+	 <!-- Multimode Voice2 proxy-Port -->
+    <ctl name="PROXY_RX_Voice Mixer VoiceMMode2" value="0" />
+    <ctl name="VoiceMMode2_Tx Mixer PROXY_TX_MMode2" value="0" />
     <!-- Multimode Voice2 end-->
 
     <!-- Voice external ec. reference -->
@@ -452,10 +458,24 @@
     <ctl name="Ultrasound Rx Port" value="Off"/>
     <ctl name="Ultrasound Microphone Index" value="0"/>
     <ctl name="Ultrasound Suspend" value="0"/>
+    <ctl name="Ultrasound ReportNone" value="0"/>
     <ctl name="RX_CDC_DMA_RX_1 SampleRate" value="KHZ_96" />
     <ctl name="RX_CDC_DMA_RX_1 Channels" value="One" />
     <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
     <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
+
+    <!-- for mius start -->
+    <ctl name="Mi_Ultrasound Enable" value="Off" />
+    <ctl name="Mi_Ultrasound RampDown" value="Off"/>
+    <ctl name="Mi_Ultrasound Event" value="0"/>
+    <ctl name="Mi_Ultrasound Mode" value="0"/>
+    <ctl name="Mi_Ultrasound Rx Port" value="Off"/>
+    <ctl name="Mi_Ultrasound Microphone Index" value="0"/>
+    <ctl name="Mi_Ultrasound Suspend" value="0"/>
+    <ctl name="Mi_Ultrasound ReportNone" value="0"/>
+    <!-- for mius end -->
+
+    <ctl name="TFA Profile" value="powerdown" />
 
     <path name="deep-buffer-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
@@ -635,6 +655,10 @@
         <ctl name="RX_EAR Mode" value="ON" />
     </path>
 
+    <path name="ultrasound-output-cover-headphone">
+        <ctl name="RX_MACRO RX5 MUX" value="AIF2_PB" />
+    </path>
+
     <path name="ultrasound-input">
         <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
         <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
@@ -673,6 +697,10 @@
 
     <path name="ultrasound-suspend">
         <ctl name="Ultrasound Suspend" value="1"/>
+    </path>
+
+    <path name="ultrasound-stop-report">
+        <ctl name="Ultrasound ReportNone" value="1"/>
     </path>
 
     <path name="amic1">
@@ -2078,6 +2106,10 @@
         <path name="incall-rec-uplink-compress" />
     </path>
 
+    <path name="incall-rec-uplink call-proxy-in">
+        <path name="incall-rec-uplink" />
+    </path>
+
     <path name="incall-rec-downlink">
         <ctl name="MultiMedia9 Mixer VOC_REC_DL"  value="1" />
     </path>
@@ -2116,6 +2148,10 @@
 
     <path name="incall-rec-downlink-compress afe-proxy">
         <path name="incall-rec-downlink-compress" />
+    </path>
+
+    <path name="incall-rec-downlink call-proxy-in">
+        <path name="incall-rec-downlink" />
     </path>
 
     <path name="incall-rec-uplink-and-downlink">
@@ -2158,6 +2194,10 @@
 
     <path name="incall-rec-uplink-and-downlink-compress afe-proxy">
         <path name="incall-rec-uplink-and-downlink-compress" />
+    </path>
+
+    <path name="incall-rec-uplink-and-downlink call-proxy-in">
+        <path name="incall-rec-uplink-and-downlink" />
     </path>
 
     <path name="hfp-sco">
@@ -2270,6 +2310,11 @@
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
 
+    <path name="voicemmode1-call call-proxy">
+        <ctl name="PROXY_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer PROXY_TX_MMode1" value="1" />
+    </path>
+
     <path name="voicemmode2-call">
         <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
@@ -2318,6 +2363,11 @@
     <path name="voicemmode2-call display-port">
         <ctl name="DISPLAY_PORT_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
+    </path>
+
+    <path name="voicemmode2-call call-proxy">
+        <ctl name="PROXY_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer PROXY_TX_MMode2" value="1" />
     </path>
 
     <!-- VoIP Rx settings -->
@@ -2846,6 +2896,10 @@
         <path name="incall_music_uplink" />
     </path>
     <path name="incall_music_uplink afe-proxy">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink call-proxy">
         <path name="incall_music_uplink" />
     </path>
 
@@ -3540,4 +3594,9 @@
         <ctl name="PRI_MI2S_RX_DL_HL Switch" value="1" />
     </path>
 
+    <path name="call-proxy">
+    </path>
+
+    <path name="call-proxy-in">
+    </path>
 </mixer>
