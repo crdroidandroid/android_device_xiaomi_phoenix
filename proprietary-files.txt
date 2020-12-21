@@ -313,7 +313,7 @@ vendor/lib64/hw/fingerprint.fpc.sm6150.so|998bb3d63a9201756b9bdf3b29eab25bffd866
 vendor/lib64/hw/fingerprint.goodix.sm6150.so|33605db7faef0e0a41c8f95763bcf90057a742d6
 vendor/lib64/libgf_ca.so|699d4acfb5ef375adb41804ed4db0a7e55a7fa23
 vendor/lib64/libgf_hal.so|e487e7662144f2cb67a536a57b8a2b7f8341313f
-vendor/lib64/libgoodixhwfingerprint.so|1e931528dfe44adcf29e617bc641b0f6c068c069
+vendor/lib64/libgoodixhwfingerprint.so|a86caa729b0b71d3121fc4febf62e24332e2f945
 vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so|412381af7a27923a4838ed9fd804bad9e533b92c
 
 # NFC
