@@ -380,17 +380,17 @@ vendor/lib64/sensors.ssc.so
 vendor/firmware/NT36xxx_MP_Setting_Criteria_592A.csv
 
 # Thermal
-init.mi_thermald.rc:vendor/etc/init/init.mi_thermald.rc
-vendor/bin/mi_thermald
-vendor/bin/thermal-engine
-vendor/etc/thermal-4k.conf
-vendor/etc/thermal-arvr.conf
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-chg-only.conf
-vendor/etc/thermald-devices.conf
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-map.conf
-vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-phone.conf
-vendor/etc/thermal-tgame.conf
+vendor/bin/mi_thermald|870d239a3914cc7d2a7eb7eec7024032450eda29
+vendor/bin/thermal-engine|e74184e124c41e51535fad6a6ad9cc089695211b
+vendor/etc/init/init.mi_thermald.rc|93377ddf881f27dabb2918adbe7215934eb8531f
+vendor/etc/thermal-4k.conf|d387a6b2fb7b32e731de7907ee1113e301cf9460
+vendor/etc/thermal-arvr.conf|a2abf55215f273cf3d42c28c52a0663ad5956558
+vendor/etc/thermal-camera.conf|4511be9c7a17b04bb28b7a2a2e700c0ce42434f9
+vendor/etc/thermal-chg-only.conf|9b1c428a14ce487ab48ab4fb476d8f64332cbf01
+vendor/etc/thermald-devices.conf|62d475be3ee174f332eb7497cb37c73df2ed8d8a
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/etc/thermal-map.conf|7172da0eab91527a1eae0c449ed3a4461cb7047f
+vendor/etc/thermal-nolimits.conf|476b6ec00a8621de52bf25f6011a9f0f55c6143e
+vendor/etc/thermal-normal.conf|5f6b6fac104fd3a3bc0292f3ce458c47392477cd
+vendor/etc/thermal-phone.conf|5998a59f90383f13477aa842583f6986c8b874c0
+vendor/etc/thermal-tgame.conf|900271d921ab2009edaeb083bc5624402befec58
