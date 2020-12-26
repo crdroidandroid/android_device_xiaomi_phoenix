@@ -59,10 +59,9 @@ vendor/lib/libspkrprot.so|5c6ddbeb53d14e9390bd76953fefdb8298497839
 vendor/firmware/tfa98xx.cnt
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|df208af5347e10667c48a5659e14fb2dbe691711
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|e894977f841b1fb8ef23d51e644f3c4d276d2dbd
 
 # Camera
 vendor/etc/camera/almalence_sr_params_tele.config
