@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service
 
 # NFC
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/nxp/opensource/sn100x
+
+# NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.gsma.services.nfc \
