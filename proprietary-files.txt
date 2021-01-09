@@ -280,8 +280,6 @@ vendor/lib64/libmibokeh_712.so
 vendor/firmware/CAMERA_ICP.elf
 
 # Camera Service
-bin/cameraserver
-lib/libcameraservice.so
 system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
 system_ext/lib/vendor.qti.hardware.camera.device@3.5.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
