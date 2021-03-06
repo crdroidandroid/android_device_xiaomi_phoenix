@@ -61,13 +61,13 @@ constexpr const char *DEVICES[] = {
 };
 
 constexpr const char *BUILD_DESCRIPTION[] = {
-    "sunfish-user 11 RQ1A.210105.002 6985033 release-keys",
-    "sunfish-user 11 RQ1A.210105.002 6985033 release-keys",
+    "sunfish-user 11 RQ2A.210305.006 7119741 release-keys",
+    "sunfish-user 11 RQ2A.210305.006 7119741 release-keys",
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "google/sunfish/sunfish:11/RQ1A.210105.002/6985033:user/release-keys",
-    "google/sunfish/sunfish:11/RQ1A.210105.002/6985033:user/release-keys",
+    "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys",
+    "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys",
 };
 
 constexpr const char *CLIENT_ID[] = {
