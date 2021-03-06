@@ -33,13 +33,10 @@ on post-fs-data
 on init
     write /sys/class/leds/white/max_brightness 4
 
-on property:ro.product.device=phoenix
-    start nqnfc_2_0_hal_service
+on property:ro.boot.product.hardware.sku=phoenix
+    enable vendor.nfc_hal_service
 
-on property:ro.product.device=phoenixin
-    stop nqnfc_2_0_hal_service
-
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
     class hal
     user nfc
