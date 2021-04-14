@@ -278,15 +278,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "0x00000043",
-        "0x00000064"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "ForegroundCpuset",
       "Path": "/dev/cpuset/foreground/cpus",
       "Values": [
@@ -312,14 +303,6 @@
         "1"
       ],
       "ResetOnInit": true
-    },
-    {
-      "Name": "DisplayWakeup",
-      "Path": "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup",
-      "Values": [
-        "1",
-        "0"
-      ]
     },
     {
       "Name": "UpMigrate",
@@ -511,12 +494,6 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 5000,
-      "Value": "0x00000043"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 5000,
       "Value": "0"
@@ -594,22 +571,10 @@
       "Value": "0x28"
     },
     {
-      "PowerHint": "AUDIO_LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 5000,
-      "Value": "0x00000043"
-    },
-    {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "PowerHALAudioState",
       "Duration": 0,
       "Value": "AUDIO_STREAMING_LOW_LATENCY"
-    },
-    {
-      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 0,
-      "Value": "0x00000043"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -634,12 +599,6 @@
       "Node": "TASchedtuneHighCap",
       "Duration": 0,
       "Value": "0"
-    },
-    {
-      "PowerHint": "DISPLAY_UPDATE_IMMINENT",
-      "Node": "DisplayWakeup",
-      "Duration": 60,
-      "Value": "1"
     }
   ]
 }
