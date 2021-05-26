@@ -9,9 +9,6 @@
 <!-- 5. the max nested path can't exceed 10                                 -->
 
 <mixer>
-<ctl name="ADC1 Volume" value="6" />
-<ctl name="ADC2 Volume" value="6" />
-<ctl name="ADC3 Volume" value="6" />
 
 <ctl name="PRIM_MI2S_RX SampleRate" value="KHZ_48" />
 <ctl name="PRIM_MI2S_RX Channels" value="Two" />
