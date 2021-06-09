@@ -24,6 +24,8 @@ vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
 # Audio
+system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so:vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
+system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so:vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/hw/audio.primary.sm6150.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
@@ -35,6 +37,7 @@ vendor/lib/libaudioalsa.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/vndk/libxlog.so
 
 # Audio extensions
 vendor/lib64/liba2dpoffload.so
