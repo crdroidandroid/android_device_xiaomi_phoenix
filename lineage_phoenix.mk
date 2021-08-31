@@ -11,18 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from vayu device
-$(call inherit-product, device/xiaomi/vayu/device.mk)
+# Inherit from phoenix device
+$(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-PRODUCT_NAME := lineage_vayu
-PRODUCT_DEVICE := vayu
+PRODUCT_NAME := lineage_phoenix
+PRODUCT_DEVICE := phoenix
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X3 Pro
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi K30
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vayu_global-user 11 RKQ1.200826.002 V12.5.3.0.RJUMIXM release-keys"
+    PRIVATE_BUILD_DESC="phoenixin-user 11 RKQ1.200826.002 V12.1.5.0.RGHINXM release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/vayu_global/vayu:11/RKQ1.200826.002/V12.5.3.0.RJUMIXM:user/release-keys
+BUILD_FINGERPRINT := POCO/phoenixin/phoenixin:11/RKQ1.200826.002/V12.1.5.0.RGHINXM:user/release-keys

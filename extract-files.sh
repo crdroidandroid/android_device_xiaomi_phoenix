@@ -14,8 +14,8 @@ fi
 
 set -e
 
-export DEVICE=vayu
-export DEVICE_COMMON=sm8150-common
+export DEVICE=phoenix
+export DEVICE_COMMON=sm6150-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

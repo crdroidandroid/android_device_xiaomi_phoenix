@@ -6,8 +6,8 @@
 
 TARGET_USE_DYNAMIC_PARTITIONS := true
 
-# Inherit from sm8150-common
-$(call inherit-product, device/xiaomi/sm8150-common/msmnile.mk)
+# Inherit from sm6150-common
+$(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -33,4 +33,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/vayu/vayu-vendor.mk)
+$(call inherit-product, vendor/xiaomi/phoenix/phoenix-vendor.mk)

@@ -16,7 +16,7 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/firmware/tas256x_reg.bin
 
 # Audio hardware
-vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/audio.primary.sm6150.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/vndk/libxlog.so
 vendor/lib/liba2dpoffload.so
