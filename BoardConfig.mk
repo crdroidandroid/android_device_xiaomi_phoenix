@@ -42,7 +42,7 @@ ODM_MANIFEST_PHOENIX_FILES := $(DEVICE_PATH)/manifest_phoenix.xml
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
-TARGET_KERNEL_CONFIG := vendor/lineage_phoenix_defconfig
+TARGET_KERNEL_CONFIG := vendor/phoenix_user_defconfig
 
 # Verified Boot
 BOARD_AVB_VBMETA_SYSTEM := system system_ext product
