@@ -28,16 +28,11 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 TARGET_CAMERA_BOOTTIME_TIMESTAMP := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_phoenix
-TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_phoenix
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_phoenix
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
-ODM_MANIFEST_SKUS += \
-    phoenix
-
-ODM_MANIFEST_PHOENIX_FILES := $(DEVICE_PATH)/manifest_phoenix.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
