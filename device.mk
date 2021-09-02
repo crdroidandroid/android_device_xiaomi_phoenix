@@ -69,9 +69,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Ramdisk
+# Rootdir
 PRODUCT_PACKAGES += \
-    fstab.ramdisk
+    fstab.qcom
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Secure element
 PRODUCT_PACKAGES += \
