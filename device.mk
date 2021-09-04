@@ -46,10 +46,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# Power
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom
