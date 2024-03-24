@@ -5,7 +5,7 @@ ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.soundfx.usb=true
 vendor.audio.adm.buffering.ms=6
 vendor.audio.feature.compr_voip.enable=false
-vendor.voice.path.for.pcm.voip=false
+vendor.voice.path.for.pcm.voip=true
 
 # Display
 debug.sf.frame_rate_multiple_threshold=120
