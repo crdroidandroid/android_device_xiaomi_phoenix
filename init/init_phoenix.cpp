@@ -47,6 +47,7 @@ void property_override(char const prop[], char const value[], bool add = true) {
 
 void load_phoenix() {
     property_override("bluetooth.device.default_name", "Redmi K30");
+    property_override("ro.boot.product.hardware.sku", "phoenix");
     property_override("ro.product.brand", "Redmi");
     property_override("ro.product.device", "phoenix");
     property_override("ro.product.manufacturer", "Xiaomi");
@@ -56,6 +57,7 @@ void load_phoenix() {
 
 void load_phoenixin() {
     property_override("bluetooth.device.default_name", "POCO X2");
+    property_override("ro.boot.product.hardware.sku", "phoenixin");
     property_override("ro.product.brand", "POCO");
     property_override("ro.product.device", "phoenixin");
     property_override("ro.product.manufacturer", "Xiaomi");
