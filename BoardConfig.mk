@@ -18,6 +18,9 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
+# Board Info
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board-info.txt
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/phoenix.config
 
