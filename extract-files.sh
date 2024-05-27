@@ -8,6 +8,9 @@
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/init/init.mi_thermald.rc)
+            sed -i "/seclabel u:r:mi_thermald:s0/d" "${2}"
+            ;;
         vendor/lib64/libgoodixhwfingerprint.so )
         "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
