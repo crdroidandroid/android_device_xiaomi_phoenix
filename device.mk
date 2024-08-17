@@ -18,9 +18,6 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 BOARD_SHIPPING_API_LEVEL := 29
 
 # Audio
-PRODUCT_PACKAGES += \
-    libtinycompress
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_idp.xml \
@@ -28,19 +25,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     $(LOCAL_PATH)/configs/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    libpiex_shim
-
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.phoenix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.phoenix.rc
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    libkeymaster_messages.vendor:64 \
-    liblzma.vendor \
-    liblzma.vendor:64
 
 # Input
 PRODUCT_COPY_FILES += \
