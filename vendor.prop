@@ -22,3 +22,7 @@ vendor.display.disable_idle_time_video=1
 vendor.display.disable_rotator_downscale=1
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
+
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|840|115|local:4630946687422888065
