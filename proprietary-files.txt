@@ -1,7 +1,6 @@
 # These proprietary files are extracted from Redmi K30 4G (codenamed `phoenix`) MIUI V13.0.6.0.SGHCNXM, unless pinned
 
 # Current blobs with ELF checks disabled:
-# com.qti.chi.override, libmialgoengine depend on libgrallocutils, which is a gnu makefile target
 # libalAILDC, libalLDC, libalhLDC depend on NDK libnativewindow and build is unable to resolve its symbols
 # libVDSuperPhotoAPI, libarcsoft_dualcam_refocus_front, libarcsoft_dualcam_refocus_rear_t, libarcsoft_dualcam_refocus_rear_w, libhvx_interface, libmialgo_rfs depend on libsdsprpc and build is unable to resolve its symbols
 
@@ -209,7 +208,7 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so;DISABLE_CHECKELF
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libFaceGrade.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libSuperSensor.so
@@ -255,7 +254,7 @@ vendor/lib64/libmialgo_fs.so
 vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
+vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so

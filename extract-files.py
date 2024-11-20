@@ -9,7 +9,6 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -20,6 +19,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'hardware/qcom-caf/common/libqti-perfd-client',
+    'hardware/qcom-caf/sm8150',
     'hardware/xiaomi',
     'vendor/qcom/opensource/display',
     'vendor/xiaomi/sm6150-common',
@@ -27,9 +27,7 @@ namespace_imports = [
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    'libgrallocutils': lib_fixup_remove,
 }
-
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/init.mi_thermald.rc': blob_fixup()
