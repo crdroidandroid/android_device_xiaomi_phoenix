@@ -1,9 +1,5 @@
 # These proprietary files are extracted from Redmi K30 4G (codenamed `phoenix`) MIUI V13.0.6.0.SGHCNXM, unless pinned
 
-# Current blobs with ELF checks disabled:
-# libalAILDC, libalLDC, libalhLDC depend on NDK libnativewindow and build is unable to resolve its symbols
-# libVDSuperPhotoAPI, libarcsoft_dualcam_refocus_front, libarcsoft_dualcam_refocus_rear_t, libarcsoft_dualcam_refocus_rear_w, libhvx_interface, libmialgo_rfs depend on libsdsprpc and build is unable to resolve its symbols
-
 # ADSP modules 
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
@@ -214,13 +210,13 @@ vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libSuperSensor.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libVDClearShot.so
-vendor/lib64/libVDSuperPhotoAPI.so;DISABLE_CHECKELF
+vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/lib_denoiser3.so
-vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
+vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so;DISABLE_CHECKELF
-vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalLDC.so
+vendor/lib64/libalhLDC.so
 vendor/lib64/libarcsat.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_bodyslim.so
@@ -228,9 +224,9 @@ vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_dualcam_image_optical_zoom.so
 vendor/lib64/libarcsoft_dualcam_optical_zoom_control.so
 vendor/lib64/libarcsoft_dualcam_refocus.so
-vendor/lib64/libarcsoft_dualcam_refocus_front.so;DISABLE_CHECKELF
-vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so;DISABLE_CHECKELF
-vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_dualcam_refocus_front.so
+vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
+vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so
 vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_preview_deflicker.so
@@ -249,9 +245,9 @@ vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libft2vendor.so
-vendor/lib64/libhvx_interface.so;DISABLE_CHECKELF
+vendor/lib64/libhvx_interface.so
 vendor/lib64/libmialgo_fs.so
-vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
+vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgoengine.so
