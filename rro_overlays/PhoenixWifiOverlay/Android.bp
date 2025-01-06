@@ -1,5 +1,5 @@
 runtime_resource_overlay {
     name: "PhoenixWifiOverlay",
     theme: "PhoenixWifiOverlay",
-    product_specific: true
+    product_specific: true,
 }
