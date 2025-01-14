@@ -18,9 +18,10 @@ GPU     | Adreno 618
 Memory  | 6/8 GB RAM
 Shipped Android Version | 10
 Battery | Non-removable Li-Po 4500 mAh battery
-Storage | 64/128/256 GB
+Storage | 64/128/256 GB (UFS 2.1)
 Display | 1080 x 2400 pixels, 20:9 ratio, 6.67 inches, IPS LCD (~386 ppi density)
+Camera | 64MP wide camera, 8MP ultra wide-angle camera, 2MP macro camera, 2MP depth camera, Dual-LED flash
 
 ## Device picture
 
-![Xiaomi Redmi K30](https://xiaomi-mi.com/uploads/CatalogueImage/redmi-k30%20(10)_17912_1577645087.jpg "Xiaomi Redmi K30 in blue")
+  ![Xiaomi Redmi K30](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-k30-1.jpg)
