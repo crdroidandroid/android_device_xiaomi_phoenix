@@ -1,7 +1,7 @@
 [
   {
     "repository": "crdroidandroid/android_device_xiaomi_sm6150-common",
-    "target_path": "device/xiaomi/sm6150-common"
+    "target_path": "device/xiaomi/sm6150-common",
     "branch": "15.0-phoenix"
   },
   {
@@ -10,7 +10,7 @@
   },
   {
     "repository": "crdroidandroid/proprietary_vendor_xiaomi_sm6150-common",
-    "target_path": "vendor/xiaomi/sm6150-common"
+    "target_path": "vendor/xiaomi/sm6150-common",
     "branch": "15.0-phoenix"
   }
 ]
